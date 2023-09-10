@@ -1,0 +1,17 @@
+@keyframes myAnimation {
+  0% {
+    transform: rotateX(90deg);
+    transform-style: preserve-3d;
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0deg);
+    transform-style: preserve-3d;
+    opacity: 1;
+  }
+}
+
+/* Apply the animation to an element */
+.flipped-element {
+  animation: myAnimation 1s ease-in-out;
+}

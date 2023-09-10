@@ -1,0 +1,58 @@
+.wrapper {
+  display: flex;
+  font-size: 1.8rem;
+  justify-content: center;
+  margin-left: 2.5%;
+  /* background-color: blue; */
+}
+
+.wrapper .dynamic-txts {
+  height: 90px;
+  overflow: hidden;
+  padding-left: 13px;
+  padding-top: px;
+}
+
+.dynamic-txts li {
+  list-style: none;
+  /*color: #FC6D6D;*/
+  color: #e63462;
+  font-size: 1.4rem;
+  position: relative;
+  top: 0;
+  animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+  100% {
+    top: -360px;
+  }
+}
+.dynamic-txts li span {
+  position: relative;
+  /* margin: 5px 0; */
+  line-height: 90px;
+}
+
+.dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2%;
+  height: 100%;
+  width: 100%;
+  background: #0a1930;
+  border-left: 2px solid #e63462;
+  animation: typing 3s steps(10) infinite;
+  /* margin-top: 25%; */
+  /* padding-bottom: 7px; */
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 5px);
+  }
+  100% {
+    left: 0;
+  }
+}
