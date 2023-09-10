@@ -23,7 +23,6 @@ li {
 
 .intro {
   height: 150vh;
-  cursor: crosshair;
   display: grid;
   grid-template-rows: 15fr 80fr;
   grid-template-areas:
